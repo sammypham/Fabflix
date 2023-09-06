@@ -1,0 +1,6 @@
+[submodule "sammyp_fabflix-android-app"]
+	path = sammyp_fabflix-android-app
+	url = https://github.com/sammypham/sammyp_fabflix-android-app.git
+[submodule "s23-122b-sammyps-android"]
+	path = s23-122b-sammyps-android
+	url = https://github.com/UCI-Chenli-teaching/s23-122b-sammyps-android.git

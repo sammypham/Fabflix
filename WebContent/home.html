@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<table id=browse_table class="table table-striped">
+    <section>
+        <h1>Browse Movies</h1>
+    </section>
+
+    <div id="search-container">
+        <input type="text" id="search-title" placeholder="Title">
+        <input type="text" id="search-year" placeholder="Year">
+        <input type="text" id="search-director" placeholder="Director">
+        <input type="text" id="search-star" placeholder="Star">
+        <button onclick=submitSearch()>Search</button>
+    </div>
+
+    <thead>
+        <tr>
+            <th>By Genre</th>
+        </tr>
+    </thead>
+
+    <tbody id=movie_genres_body></tbody>
+
+    <thead>
+        <tr>
+            <th>By Alphabet</th>
+        </tr>
+    </thead>
+
+    <tbody id=movie_alphanumerical_body>
+        <tr>
+            <td>
+                <a class=roundButton href="list.html?prefix=a&quantity=25&sort=0&page=1">A</a>
+                <a class=roundButton href="list.html?prefix=b&quantity=25&sort=0&page=1">B</a>
+                <a class=roundButton href="list.html?prefix=c&quantity=25&sort=0&page=1">C</a>
+                <a class=roundButton href="list.html?prefix=d&quantity=25&sort=0&page=1">D</a>
+                <a class=roundButton href="list.html?prefix=e&quantity=25&sort=0&page=1">E</a>
+                <a class=roundButton href="list.html?prefix=f&quantity=25&sort=0&page=1">F</a>
+                <a class=roundButton href="list.html?prefix=g&quantity=25&sort=0&page=1">G</a>
+                <a class=roundButton href="list.html?prefix=h&quantity=25&sort=0&page=1">H</a>
+                <a class=roundButton href="list.html?prefix=i&quantity=25&sort=0&page=1">I</a>
+                <a class=roundButton href="list.html?prefix=j&quantity=25&sort=0&page=1">J</a>
+                <a class=roundButton href="list.html?prefix=k&quantity=25&sort=0&page=1">K</a>
+                <a class=roundButton href="list.html?prefix=l&quantity=25&sort=0&page=1">L</a>
+                <a class=roundButton href="list.html?prefix=m&quantity=25&sort=0&page=1">M</a>
+                <a class=roundButton href="list.html?prefix=n&quantity=25&sort=0&page=1">N</a>
+                <a class=roundButton href="list.html?prefix=o&quantity=25&sort=0&page=1">O</a>
+                <a class=roundButton href="list.html?prefix=p&quantity=25&sort=0&page=1">P</a>
+                <a class=roundButton href="list.html?prefix=q&quantity=25&sort=0&page=1">Q</a>
+                <a class=roundButton href="list.html?prefix=r&quantity=25&sort=0&page=1">R</a>
+                <a class=roundButton href="list.html?prefix=s&quantity=25&sort=0&page=1">S</a>
+                <a class=roundButton href="list.html?prefix=t&quantity=25&sort=0&page=1">T</a>
+                <a class=roundButton href="list.html?prefix=u&quantity=25&sort=0&page=1">U</a>
+                <a class=roundButton href="list.html?prefix=v&quantity=25&sort=0&page=1">V</a>
+                <a class=roundButton href="list.html?prefix=x&quantity=25&sort=0&page=1">X</a>
+                <a class=roundButton href="list.html?prefix=y&quantity=25&sort=0&page=1">Y</a>
+                <a class=roundButton href="list.html?prefix=z&quantity=25&sort=0&page=1">Z</a>
+                <a class=roundButton href="list.html?prefix=0&quantity=25&sort=0&page=1">0</a>
+                <a class=roundButton href="list.html?prefix=1&quantity=25&sort=0&page=1">1</a>
+                <a class=roundButton href="list.html?prefix=2&quantity=25&sort=0&page=1">2</a>
+                <a class=roundButton href="list.html?prefix=3&quantity=25&sort=0&page=1">3</a>
+                <a class=roundButton href="list.html?prefix=4&quantity=25&sort=0&page=1">4</a>
+                <a class=roundButton href="list.html?prefix=5&quantity=25&sort=0&page=1">5</a>
+                <a class=roundButton href="list.html?prefix=6&quantity=25&sort=0&page=1">6</a>
+                <a class=roundButton href="list.html?prefix=7&quantity=25&sort=0&page=1">7</a>
+                <a class=roundButton href="list.html?prefix=8&quantity=25&sort=0&page=1">8</a>
+                <a class=roundButton href="list.html?prefix=9&quantity=25&sort=0&page=1">9</a>
+                <a class=roundButton href="list.html?prefix=*&quantity=25&sort=0&page=1">*</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+<script src="includes/navbar.js"></script>
+
+<script src="home.js"></script>
+<script src="logout.js"></script>
+</body>
+</html>

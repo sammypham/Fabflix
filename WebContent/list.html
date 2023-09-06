@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="navbar"></div>
+
+<div class="page-wrapper">
+  <div class="table-container">
+    <section>
+      <h1>Movie List</h1>
+    </section>
+
+    <div id="filter-container">
+      <div id="pagination">
+        <select id=quantity_option>
+          <option value="10">10</option>
+          <option value="25" selected>25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+
+        <select id=sort_option>
+          <option value="0" selected>Title ↑, Rating ↓</option>
+          <option value="1">Title ↑, Rating ↑</option>
+          <option value="2">Title ↓, Rating ↓</option>
+          <option value="3">Title ↓, Rating ↑</option>
+          <option value="4">Rating ↑, Title ↓</option>
+          <option value="5">Rating ↑, Title ↑</option>
+          <option value="6">Rating ↓, Title ↓</option>
+          <option value="7">Rating ↓, Title ↑</option>
+        </select>
+
+        <button id=page-down onclick=handlePageDown()>Prev</button>
+        <button id=page-up onclick=handlePageUp()>Next</button>
+      </div>
+    </div>
+
+    <table id=movie_table class="table table-striped">
+      <!-- Create a table header -->
+      <thead>
+        <tr>
+          <!-- Titles of each column-->
+          <th class=top>#</th>
+          <th class=top>Title</th>
+          <th class=top>Year</th>
+          <th class=top>Director</th>
+          <th class=top>Genres</th>
+          <th class=top>Stars</th>
+          <th class=top>Rating</th>
+          <th class=top>Cart</th>
+        </tr>
+      </thead>
+      <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+      <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
+      <tbody id=movie_table_body></tbody>
+    </table>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+
+<script src="list.js"></script>
+<script src="logout.js"></script>
+<script src="includes/navbar.js"></script>
+
+</body>
+</html>

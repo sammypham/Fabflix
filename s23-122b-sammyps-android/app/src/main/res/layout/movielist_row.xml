@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" android:text="Movie Title (Year)"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/director" android:text="Director: Director_Name"
+            android:textSize="14sp" android:textStyle="bold"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/genres"
+            android:text="Genres: Genres1, Genre2, Genre3"
+            android:textSize="14sp" android:textStyle="bold"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/stars"
+            android:text="Stars: Star1, Star2, Star3"
+            android:textSize="14sp" android:textStyle="bold"/>
+
+</LinearLayout>
